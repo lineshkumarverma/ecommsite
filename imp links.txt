@@ -1,0 +1,2 @@
+validation check https://validator.w3.org/
+image -photobucket.com (upload img to get url)
