@@ -8,6 +8,8 @@
     <title>My awesome food store</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+ 
 </head>
 
 <body>
@@ -92,14 +94,10 @@
                         <div class="auth flex items-center">
                             <div>
                                 <img src="./icons/user-icon.svg" alt="">
-                                <a href="#">Log in</a>
+                                <a href="./login.html" target="_blank">Sign up|Log in</a>
                             </div>
                             <span class="divider">|</span>
-                            <div>
-                                <img src="./icons/edit.svg" alt="">
-                                <a href="#">Register Now</a>
-                            </div>
-                            <span class="divider">|</span>
+                           
                             <div>
                                 <img src="./icons/cart.svg" alt="">
                                 <a href="#">0 Items - ($0.00)</a>
@@ -124,7 +122,7 @@
                             <div class="time flex items-center">
                                 <img src="./icons/clock.svg" alt="">
                                 <div>
-                                    <h5>Working Hours:</h5>
+                                    <a id="a1"><h5>Working Hours:</h5></a>
                                     <h6>Mon - Sat (8.00am - 12.00am)</h6>
                                 </div>
                             </div>
@@ -132,14 +130,14 @@
                     </div>
                     <div class="navbar magic-shadow">
                         <div class="container flex justify-center">
-                            <a href="#" class="active">Home</a>
-                            <a href="#">About us</a>
-                            <a href="#">Products</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Shop</a>
-                            <a href="#">Services</a>
-                            <a href="#">Gallery</a>
-                            <a href="#">Contact us</a>
+                            <a href="#a1" class="active">Home</a>
+                            <a href="#a2">About us</a>
+                            <a href="#a3">Products</a>
+                            <a href="#a4">Blog</a>
+                            <a href="#a8">Shop location</a>
+                            <a href="#a6">Services</a>
+                            <a href="#a7">Gallery</a>
+                            <a href="#a8">Contact us</a>
                         </div>
                     </div>
                 </nav>
@@ -147,13 +145,13 @@
                 <header class="hero flex items-center">
                     <div class="container">
                         <div class="welcome flex items-center">
-                            <span>Welcome to</span>
+                            <span>">Welcome to</span>
                             <img src="./icons/logo-2.svg" alt="">
                         </div>
                         <h1>The World Best <span>seafood</span> restaurant</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the
-                            industry's standard dummy.</p>
+                        <p>A very romantic restaurant, entertaining its guests with special dishes, fresh sea food and long wine list. Italian cuisine are also found here.
+
+                        </p>
                         <div>
                             <button class="btn btn-primary">Read More</button>
                             <button class="btn btn-secondary">Shop Now</button>
@@ -166,7 +164,7 @@
 
                 <section class="top-products">
                     <div class="container">
-                        <h1 class="section-heading">Top products</h1>
+                        <h1 class="section-heading"><a id="a3">Top products</a></h1>
                         <div class="slider">
                             <button class="slider-btn prev-btn"><img src="./icons/pre.svg" alt=""></button>
                             <button class="slider-btn next-btn"><img src="./icons/next.svg" alt=""></button>
@@ -191,7 +189,7 @@
                                         <div class="flex justify-center">
                                             <button>
                                                 <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
+                                                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="1.25">Add To Cart</a>
                                             </button>
                                         </div>
                                     </div>
@@ -216,7 +214,7 @@
                                         <div class="flex justify-center">
                                             <button>
                                                 <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
+                                                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="1.25">Add To Cart</a>
                                             </button>
                                         </div>
                                     </div>
@@ -241,11 +239,12 @@
                                         <div class="flex justify-center">
                                             <button>
                                                 <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
+                                                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="1.25">Add To Cart</a>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
+                
                                 <div class="food-card magic-shadow-sm">
                                     <div class="product-image flex items-center justify-center">
                                         <img src="./images/plate-3.png" alt="">
@@ -266,7 +265,7 @@
                                         <div class="flex justify-center">
                                             <button>
                                                 <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
+                                                <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="1.25">Add To Cart</a>
                                             </button>
                                         </div>
                                     </div>
@@ -274,26 +273,21 @@
                             </div>
                         </div>
                         <div class="text-center btn-wrapper">
-                            <button class="btn btn-secondary">View More</button>
+                           <a href="./menu..html"> <button class="btn btn-secondary">View More</button></a>
                         </div>
                     </div>
                 </section>
                 <section class="about-meal">
                     <div class="container">
-                        <h1 class="section-heading">About Fresh Meal</h1>
+                        <h1 class="section-heading"><a id="a2">About Fresh Meal</a></h1>
                         <div class="about-meal-wrap flex">
                             <div class="flex-1">
                                 <img src="./images/yogurt.png" alt="">
                             </div>
                             <div class="flex-1">
-                                <h2>Freshmeal is a long established fact that a reader will be distracted</h2>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-                                    piece of
-                                    classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                    McClintock, a
-                                    Latin professor at Hampden Sydney College in Virginia, The standard chunk of Lorem
-                                    Ipsum used
-                                    since the 1500s is reproduced below for those interested.</p>
+                                <h2>Freshmeal is a long established restaurant since 1999.</h2>
+                                <p>The restaurant, which serves a seasonal tasting menu and also has three Michelin stars and four from the New York Times, is just the second American restaurant to be named best in the world by this particular list.The restaurant also offers an impressive list of beverages, finest wines, champagnes and beers.
+                                     The lounge and sunset create the most romantic and memorable dinner for the guests..</p>
                                 <button class="btn btn-secondary">Read More</button>
                             </div>
                         </div>
@@ -301,7 +295,7 @@
                 </section>
                 <section class="our-services">
                     <div class="container">
-                        <h1 class="section-heading">Our services</h1>
+                        <a id="a6"><h1 class="section-heading">Our services</h1></a>
                         <div class="card-wrapper flex">
                             <div class="service-card magic-shadow-sm">
                                 <img class="icon" src="./icons/transport.svg" alt="">
@@ -325,32 +319,35 @@
                     </div>
                 </section>
                 <section class="big-deal">
+                      
                     <div class="container">
-                        <h1 class="section-heading text-pure">Big Deals of the Week</h1>
-                        <div class="timer">
-                            <div>
-                                <span>02</span>
+                        <h1 class="section-heading text-pure">Big Deals of the year</h1>
+                        
+                        
+                        <div  id="countdown" class="timer">
+                          /*  <div>
+                                <span id="days"></span>
                                 <span>Days</span>
                             </div>
                             <div>
-                                <span>24</span>
+                                <span id="hours"></span>
                                 <span>Hours</span>
                             </div>
                             <div>
-                                <span>55</span>
+                                <span id="minutes"></span>
                                 <span>Minutes</span>
                             </div>
                             <div>
-                                <span>58</span>
+                                <span id="seconds"></span>
                                 <span>Seconds</span>
                             </div>
-                        </div>
+                        </div> */
                     </div>
                 </section>
 
                 <section class="latest-news">
                     <div class="container">
-                        <h1 class="section-heading">Lastest News from Blog</h1>
+                        <h1 class="section-heading"><a id="a4">Lastest News from Blog</a></h1>
                         <div class="article-wrapper">
                             <article class="card magic-shadow-sm">
                                 <div>
@@ -421,7 +418,7 @@
 
                 <section class="contact-us flex">
                     <div class="contact-info-wrapper">
-                        <h1 class="section-heading">Contact us</h1>
+                        <a id="a8"><h1 class="section-heading">Contact us</h1></a>
                         <div class="contact-info">
                             <div>
                                 <div>
@@ -467,25 +464,25 @@
                             <h3>Quik Links</h3>
                             <ul>
                                 <li>
-                                    <a href="#">Home</a>
+                                    <a href="#a1">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#">About us</a>
+                                    <a href="#a2">About us</a>
                                 </li>
                                 <li>
-                                    <a href="#">Products</a>
+                                    <a href="#a3">Products</a>
                                 </li>
                                 <li>
-                                    <a href="#">Blog</a>
+                                    <a href="#a4">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="#">Services</a>
+                                    <a href="#a6">Services</a>
                                 </li>
                                 <li>
-                                    <a href="#">Gallery</a>
+                                    <a href="#a7">Gallery</a>
                                 </li>
                                 <li>
-                                    <a href="#">Contact us</a>
+                                    <a href="#a8">Contact us</a>
                                 </li>
 
                             </ul>
@@ -495,13 +492,13 @@
                             <div>
                                 <ul>
                                     <li>
-                                        <a href="https://www.facebook.com/codersgyan">
+                                        <a href="https://www.facebook.com/">
                                             <img src="./icons/facebook.svg" alt="">
                                             <span>Facebook</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://twitter.com/CoderGyan">
+                                        <a href="https://twitter.com/">
                                             <img src="./icons/twitter.svg" alt="">
                                             <span>Twitter</span>
                                         </a>
@@ -513,7 +510,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/codersgyan/">
+                                        <a href="https://www.instagram.com/">
                                             <img src="./icons/instagram.svg" alt="">
                                             <span>Instagram</span>
                                         </a>
@@ -554,7 +551,6 @@
             </div>
         </div>
     </div>
-
 
 
 
